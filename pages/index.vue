@@ -77,6 +77,21 @@
 <script>
 import axios from 'axios'
 export default {
+  head() {
+    return {
+      title: 'Movie App - Latest Streaming Movie Info',
+      meta: [{
+          hid: 'description',
+          name: 'description',
+          content: 'Get all the latest streaming movies in theaters and online'
+        }, {
+          hid: 'keywords',
+          name: 'keywords',
+          content: 'movies, stream, streaming, theatres'
+        }
+      ]
+    }
+  },
   data() {
     return {
       api_key: '88a36db8b92eb206d7f366399339529a',

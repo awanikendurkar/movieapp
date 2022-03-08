@@ -47,10 +47,15 @@
 import axios from 'axios'
 export default {
     name: 'single-movie',
+    head() {
+        return {
+            title: this.movie.title,
+        }
+    },
     data() {
         return {
             api_key: '88a36db8b92eb206d7f366399339529a',
-            movie: null,
+            movie: '',
         }
     },
     async fetch() {
